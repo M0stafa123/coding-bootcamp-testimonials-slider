@@ -1,9 +1,6 @@
 "use strict";
 let next = document.querySelectorAll(".next");
 let prev = document.querySelectorAll(".prev");
-let slide = document.querySelectorAll(".slide");
-let slides = Array.from(slide);
-slides[0].style.transform = "translateX(0%)";
 prev.forEach((e) => {
     e.addEventListener("click", function () {
         let currentSlide = document.querySelector(".active-slide");
